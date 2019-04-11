@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+
+}
+img{
+
+}
+header{
+    padding: 38px 38px 38px 52px;
+}
+.header-card{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-style: regular;
+    color: #707070;
+}
+.header-card-number-number{
+    color: #000;
+    font-style: bold;
+}
+/*main part*/
+.main-card{
+    border: 2px solid #A1A1A1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+
+}
+.card-title{
+   width: 700px;
+   border-bottom: 2px solid #3583b0;
+   margin: 0 auto;
+   transition: 1.9s;
+}
+.card-title:hover{
+    border: none;
+    transition: 1.9s;
+}
+
+h1{
+    margin-bottom: 0px;
+    text-align: center;
+    font-size:  74px;
+    font-family: Arial, sans-serif;
+    color:  #3583b0;
+    transition: 1.9s;
+}
+h1:hover{
+    background: #3583B0;
+    color: white;
+    transition: 1.3s;
+    border-radius: 20px;
+}
+img{
+    cursor: pointer;
+    transition: .5s;
+    z-index: -3;
+}
+img:hover,
+.screen-content img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    z-index: -3;
+}
+.main-content{
+display: flex;
+justify-content: center;
+margin-top: 60px;
+flex-wrap: wrap;
+position: relative;
+}
+.main-photo-phones{
+    /*background-image:   url('../img/phone.png');
+    flex-basis: 300px;*/
+}
+h6{
+    font-size:  24px;
+    font-family: Arial, sans-serif;
+    font-style: bold;
+    margin: 0 0 10px;
+    border-bottom:  2px solid #959595;
+}
+p{
+    margin: 0 0 40px;
+}
+.main-content-characteristic{
+    margin-left: 50px;
+}
+.screen-content{
+margin-top: 40px;
+display: flex;
+justify-content: space-between;
+}
+.red-circle{
+    position: absolute;
+    top: -115px;
+    left: -80px;
+    text-transform: uppercase;
+    border-radius:  50%;
+    background: #ff0000;
+    height: 170px;
+    width: 170px;
+    opacity: .36;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    transition: .8s;
+}
+.red-circle:hover{
+    transform: scale(2) translateX(50px);
+    background:  #000;
+    opacity: .5;
+    transition: 1.5s;
+
+
+}
+.prise{
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+    font-style: bold;
+    text-align: center;
+}
+.short-description{
+    margin-top: 90px;
+}
+.short-description h6{
+    font-size: 20px;
+}
+p.small-text{
+    font-size: 15px;
+    font-style: regular;
+}
+p.small-text a{
+    color: #4b8db6;
+}
+.footer-card ul li{
+    list-style-type: none;
+}
+a{
+    transition: .3s;
+}
+p.small-text a:hover{
+    background: #4B8DB6;
+    color: #000;
+    transition: .3s;
+}
+@media screen and (max-width: 830px){
+    h1{
+        font-size: 50px;
+    }
+    .card-title {
+        width: 470px;
+    }
+.memory-content{
+    display: flex;
+    }
+    .memory-content-first h6{
+        padding-top: 15px;
+            padding-bottom: 13px;
+    }
+    .memory-content-second h6{
+        padding-top: 15px;
+            padding-bottom: 13px;
+    }
+}
+@media screen and (max-width: 750px){
+    .memory-content-second h6 {
+         padding-top: 0px;
+         padding-bottom: 0px;
+}
+@media screen and (max-width: 700px){
+    .memory-content{
+        display: block;
+        }
+    h1{
+        font-size: 30px;
+    }
+    .card-title{
+        width: 300px;
+    }
+    .header-card-name span,
+    .header-card-number span{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 430px){
+        .main-content{
+           // display: block;
+        }
+        .main-content-characteristic p{
+            font-size: 20px;
+        }
+        .main-content-characteristic {
+            margin-left: 0px;
+        }
+    a{
+        display: block;
+    }
+    .card-title{
+        display: contents;
+        border-bottom: 0px solid #3583b0;
+    }
+    .main-title {
+        font-size: 20px;
+    }
+
+    h1{
+        border-bottom: 2px solid #3583b0;
+        max-width: 200px;
+
+    }
+    .red-circle {
+        position: absolute;
+        top: -56px;
+        left: -38px;
+        }
+    img{
+        width: 100%;
+
+    }
+    .main-card {
+        border: 2px solid #A1A1A1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 40px;
+}
+.short-description{
+    max-width: 310px;
+}
+.header-card{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.small-text a{
+
+}
+}
